@@ -8,11 +8,11 @@ def f(arg1, arg2, arg3):                                 # arg1: string / arg2: 
         aux += [chr(r)]                                  #Converte o valor ASCII r de volta para a letra correspondente e adiciona à lista aux
         arg3 += 1                                        #Incrementa arg3.
         if arg3 == arg2 + 1:                             #Se arg3 atingir o valor arg2 + 1, reseta arg3 para 1.
-            arg3 = 1                                  #Concatena a lista aux em uma string e retorna.
-    return "".join(aux)                                  #
+            arg3 = 1                                 
+    return "".join(aux)                                  #Concatena a lista aux em uma string e retorna.
 
-if __name__ == '__main__':                                  #
-    s = input()                                  #
-    n = int(input())                                  #
-    c = int(input())                                  #
-    print(f(s, n, c))                                  #
+if __name__ == '__main__':                               #Entradas via input()
+    s = input()                                          # STRING
+    n = int(input())                                     # int
+    c = int(input())                                     # int
+    print(f(s, n, c))                                    # Chama a função f() com os valores recebidos e imprime o resultado.
